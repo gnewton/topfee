@@ -1,0 +1,57 @@
+package topfee
+
+type StatusInfo struct {
+	Name         string
+	State        string
+	TgidInt      int
+	Pid          int
+	PPid         int
+	TracerPid    int
+	Uid          []int
+	Gid          []int
+	FDSize       int
+	Groups       []int
+	VmPeak       int
+	VmPeakString string
+	VmSize       int
+	VmSizeString string
+	VmLck        int
+	VmLckString  string
+	VmPin        int
+	VmPinString  string
+	VmHWM        int
+	VmHWMString  string
+	VmRSS        int
+	VmRSSString  string
+	VmData       int
+	VmDataString string
+	VmStk        int
+	VmStkString  string
+	VmExe        int
+	VmExeString  string
+	VmLib        int
+	VmLibString  string
+	VmPTE        int
+	VmPTEString  string
+	VmSwap       int
+	VmSwapString string
+	Threads      int
+
+	SigQ                       string
+	SigPnd                     string
+	ShdPnd                     string
+	SigBlk                     string
+	SigIgn                     string
+	SigCgt                     string
+	CapInh                     string
+	CapPrm                     string
+	CapEff                     string
+	CapBnd                     string
+	Seccomp                    int
+	Cpus_allowed               string
+	Cpus_allowed_list          string
+	Mems_allowed               []string
+	Mems_allowed_list          string
+	voluntary_ctxt_switches    int
+	nonvoluntary_ctxt_switches int
+}
